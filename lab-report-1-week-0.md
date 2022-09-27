@@ -1,1 +1,1 @@
-![Image](screen.jpg)
+![Image](screen.JPG)

@@ -1,3 +1,3 @@
-Hello, world! <br>
-These are changes. <br>
-Testing! [Link](lab-report-1-week-0.md)
+Lab Reports: <br>
+[Week 0](report0.md) <br>
+[Week 1](report1.md)

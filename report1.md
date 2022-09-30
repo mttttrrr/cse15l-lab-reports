@@ -65,3 +65,12 @@ ssh cs15lfa22pl@ieng6.ucsd.edu
 I can now just type `labssh` to connect.
 
 ![Batch file.](report0bat.PNG)
+
+The same is true of `scp` and all other commands. Here is a batch file that, if there is a java file on your computer, will run it remotely:
+
+```
+@echo off 
+
+scp %1.java cs15lfa22pl@ieng6.ucsd.edu:~\code\
+ssh cs15lfa22pl@ieng6.ucsd.edu "cd code; javac %1.java; java %1"
+```

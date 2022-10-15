@@ -2,12 +2,12 @@
 
 ## Installing VS Code
 
-Go to https://code.visualstudio.com/ and download the installer, then run it. After completing its instructions, VS code is installed.<br>
+Go to [https://code.visualstudio.com/](https://code.visualstudio.com/) and download the installer, then run it. After completing its instructions, VS code is installed.<br>
 ![VS Code.](report0vscode.PNG)
 
 ## Remotely Connecting
 
-Now you will connect to a remote machine in order to work on it. Access to such a remote machine is allocated to you by UCSD. run ```ssh cs15lfa22XX@ieng6.ucsd.edu``` in the command line, where ```XX``` are unique to you (see this at the UCSD ETS site here: https://sdacs.ucsd.edu/~icc/index.php). It will prompt a password (this must be set through the global password reset tool on the ETS site). If entered correctly, you would connect to the remote machine and be able to execute commands on it. <br>
+Now you will connect to a remote machine in order to work on it. Access to such a remote machine is allocated to you by UCSD. run ```ssh cs15lfa22XX@ieng6.ucsd.edu``` in the command line, where ```XX``` are unique to you (see this at the UCSD ETS site here: [https://sdacs.ucsd.edu/~icc/index.php](https://sdacs.ucsd.edu/~icc/index.php)). It will prompt a password (this must be set through the global password reset tool on the ETS site). If entered correctly, you would connect to the remote machine and be able to execute commands on it. <br>
 
 ![It will look like this. Ignore that there is no password prompt, soon you will not have one either.](report0ssh.PNG)
 

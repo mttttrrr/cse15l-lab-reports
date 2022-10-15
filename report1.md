@@ -11,6 +11,8 @@ Now you will connect to a remote machine in order to work on it. Access to such 
 
 ![It will look like this. Ignore that there is no password prompt, soon you will not have one either.](report0ssh.PNG)
 
+It will look like this. Ignore that there is no password prompt, soon you will not have one either.
+
 ## Some Commands
 
 If you have ```ssh```ed over to the remote UCSD machine, you are now using Linux. Here are some useful commands:
@@ -35,6 +37,8 @@ In this example, I see what is in the immediate directory where I appear after `
 - ```scp <file> cs15lfa22pl2ieng6.ucsd.edu:<path>``` copies a file from the immediate filesystem (which could be on your local computer) to the specified path on the remote machine (when you ```ssh``` you are in the home directory, its path is ```~\```). This is very useful if you wish to edit files on your computer and run them remotely.
 
 ![Scp.](report0scp.PNG)
+
+In this example, I first create a file by executing the program `notepad` with the argument `test.txt`, creating a new text file in which I can edit its contents. In particular, its contents are "`This is being printed remotely.`". This is Windows specific, on Linux `notepad` can be replaced with `nano` to open a text editor. Then, I use `scp` to send it to the home directory on the ucsd server. I then `ssh` and use `cat` to print the contents of the file remotely.
 
 ## Setting Up SSH Keys
 

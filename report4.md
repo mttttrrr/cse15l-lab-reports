@@ -28,15 +28,19 @@ class FileHelpers {
 I will demonstrate some of the efficiency that can be gained by using Vim's shortcuts/macros/commands, by showing how the `start` parameter in the `getFiles` method can be renamed to `base`. Having opened the file, here are the commands:
 
 ` / s t a r <Enter>` (6 keys pressed): This series of commands takes me to the first instance of `start` in the `getFiles` method. Specifically, `/` begins a search query for the next entered, which I say is `star`. I have dstarted at the top of the file (this does not always happen), so this immediately takes me to the first instance of `start` in `getFiles`. I press `<Enter>` to escape the search query entry.
+
 ![star](report4star.PNG)
 
 ` c e ` (8 keys pressed): This series of commands deletes everything up to the next move command. `c` denotes the start, and `e` moves to the end of the next word, in this case `start`.
+
 ![cex](report4cex.PNG)
 
 ` b a s e <Escape>` (13 keys pressed): This series of commands enters base as the new word and yanks it. `base` is entered as a word, `<Escape>` ends editing mode.
+
 ![base](report4base.PNG)
 
 ` n . n . ` (17 keys pressed): This series of commands replaces all remaining instances (of which there are specifically two) in the `getFiles` method. `n` advances the search (which is still active, I am just no longer entering the query) to the next term with `star`, reasonably an instance of `start`. `.` repeats the last series of commands, up to the point that no variables have changed between the input of those commands and the invocation of `.` such that the effect of those commands would be dependent on anything more than position (`c` does not count as dependent on position, as the notion of a word is abstracted in this context).
+
 ![repl](report4repl.PNG)
 
 ' : w q ' (20 keys pressed): This series of commands saves the file and exits vim to the command line.
